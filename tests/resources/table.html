@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TableParser</title>
+</head>
+<body>
+<div>
+    <table id="standardTable">
+        <thead>
+        <tr>
+            <th>House</th>
+            <th>Region</th>
+            <th>Seat</th>
+            <th>Words</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Targaryen</td>
+            <td>Crownlands</td>
+            <td>Dragonstone</td>
+            <td>Fire and Blood</td>
+        </tr>
+        <tr>
+            <td>Stark</td>
+            <td>North</td>
+            <td>Winterfell</td>
+            <td>Winter is Coming</td>
+        </tr>
+        <tr>
+            <td>Lannister</td>
+            <td>Westerlands</td>
+            <td>Casterly Rock</td>
+            <td>Hear Me Roar</td>
+        </tr>
+        <tr>
+            <td>Greyjoy</td>
+            <td>Iron Islands</td>
+            <td>Pyke</td>
+            <td>We Do Not Sow</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<hr>
+<div>
+    <table id="tableWithInvisibleRow">
+        <thead>
+        <tr>
+            <th>House</th>
+            <th>Region</th>
+            <th>Seat</th>
+            <th>Words</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Targaryen</td>
+            <td>Crownlands</td>
+            <td>Dragonstone</td>
+            <td>Fire and Blood</td>
+        </tr>
+        <tr>
+            <td>Stark</td>
+            <td>North</td>
+            <td>Winterfell</td>
+            <td>Winter is Coming</td>
+        </tr>
+        <tr style="display: none">
+            <td>Lannister</td>
+            <td>Westerlands</td>
+            <td>Casterly Rock</td>
+            <td>Hear Me Roar</td>
+        </tr>
+        <tr style="visibility: hidden">
+            <td>Greyjoy</td>
+            <td>Iron Islands</td>
+            <td>Pyke</td>
+            <td>We Do Not Sow</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<hr>
+<div>
+    <table id="tableWithIncompleteRow">
+        <thead>
+        <tr>
+            <th>House</th>
+            <th>Region</th>
+            <th>Seat</th>
+            <th>Words</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Targaryen</td>
+            <td>Crownlands</td>
+            <td>Dragonstone</td>
+            <td>Fire and Blood</td>
+        </tr>
+        <tr>
+            <td>Stark</td>
+            <td>North</td>
+            <td>Winterfell</td>
+            <td>Winter is Coming</td>
+        </tr>
+        <tr>
+            <td>Lannister</td>
+        </tr>
+        <tr>
+            <td>Greyjoy</td>
+            <td>We Do Not Sow</td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div>
+    <table id="tableWithTbodyInputDataTag">
+        <thead>
+        <tr>
+            <th>House</th>
+            <th>Region</th>
+            <th>Seat</th>
+            <th>Words</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input value="Targaryen" disabled></td>
+            <td><input value="Crownlands" disabled></td>
+            <td><input value="Dragonstone" disabled></td>
+            <td><input value="Fire and Blood" disabled></td>
+        </tr>
+        <tr>
+            <td><input value="Stark" disabled></td>
+            <td><input value="North" disabled></td>
+            <td><input value="Winterfell" disabled></td>
+            <td><input value="Winter is Coming" disabled></td>
+        </tr>
+        <tr>
+            <td><input value="Lannister" disabled></td>
+            <td><input value="Westerlands" disabled></td>
+            <td><input value="Casterly Rock" disabled></td>
+            <td><input value="Hear Me Roar" disabled></td>
+        </tr>
+        <tr>
+            <td><input value="Greyjoy" disabled></td>
+            <td><input value="Iron Islands" disabled></td>
+            <td><input value="Pyke" disabled></td>
+            <td><input value="We Do Not Sow" disabled></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
