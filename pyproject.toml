@@ -28,7 +28,7 @@ dependencies = ["pyquery"]
 dynamic = ["version"]
 
 [project.urls]
-"Homepage" = "https://github.com/zhaoblake/tableparser"
+"Homepage" = "https://github.com/zhaoblake/getable"
 
 [project.optional-dependencies]
 test = [
@@ -39,8 +39,11 @@ dev = [
     "pre-commit >=2.17.0,<3.0.0",
 ]
 
+[tool.isort]
+profile = "black"  # compatible with blake
+
 [tool.hatch.version]
-path = "tableparser/__init__.py"
+path = "getable/__init__.py"
 
 [tool.ruff.per-file-ignores]
 "__init__.py" = ["F401"]  # imported but unused

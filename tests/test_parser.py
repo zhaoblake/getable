@@ -1,7 +1,7 @@
 import os
 from functools import lru_cache
 
-from tableparser.parser import TableParser
+from getable.parser import TableParser
 
 
 def test_parse_standard_table():

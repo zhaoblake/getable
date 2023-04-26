@@ -1,6 +1,6 @@
 from pyquery import PyQuery as PyqElement
 
-from tableparser.models import (
+from getable.models import (
     Table,
     TableBody,
     TableCell,
@@ -8,7 +8,7 @@ from tableparser.models import (
     TableHead,
     TableRow,
 )
-from tableparser.utils import is_visible
+from getable.utils import is_visible
 
 
 class TableParser:
