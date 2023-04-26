@@ -9,7 +9,8 @@ pip install getable
 ```
 
 ## Usage
-Now we get a standard HTML table like below, let's see what we can do with tableparser. 
+
+Now we get a standard HTML table like below, let's see what we can do with tableparser.
 <table id="standardTable">
         <thead>
         <tr>
@@ -50,7 +51,6 @@ Now we get a standard HTML table like below, let's see what we can do with table
 ```python
 from tableparser import TableParser
 
-
 source = """
 <table id="standardTable">
     <thead>
@@ -82,6 +82,10 @@ Greyjoy, Iron Islands, Pyke, We Do Not Sow
 print(table.body[-1][-1].text)  # We Do Not Sow
 print(table[-1][-1].text)  # We Do Not Sow
 ```
+
+## TODO
+
+Change project name to getable since tableparser is not available on PyPI.
 
 ## License
 
