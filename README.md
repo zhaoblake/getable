@@ -1,4 +1,4 @@
-# tableparser
+# getable
 
 A simple tool to parse HTML table to a 2d-array-like data structure.
 
@@ -10,7 +10,7 @@ pip install getable
 
 ## Usage
 
-Now we get a standard HTML table like below, let's see what we can do with tableparser.
+Now we get a standard HTML table like below, let's see what we can do with getable.
 <table id="standardTable">
         <thead>
         <tr>
@@ -49,7 +49,7 @@ Now we get a standard HTML table like below, let's see what we can do with table
     </table>
 
 ```python
-from tableparser import TableParser
+from getable import TableParser
 
 source = """
 <table id="standardTable">
@@ -82,10 +82,6 @@ Greyjoy, Iron Islands, Pyke, We Do Not Sow
 print(table.body[-1][-1].text)  # We Do Not Sow
 print(table[-1][-1].text)  # We Do Not Sow
 ```
-
-## TODO
-
-Change project name to getable since tableparser is not available on PyPI.
 
 ## License
 

@@ -1,6 +1,6 @@
 from pyquery import PyQuery as PyqElement
 
-from tableparser.utils import is_visible
+from getable.utils import is_visible
 
 
 def test_is_visible():
