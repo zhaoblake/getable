@@ -23,6 +23,12 @@ def test_parse_standard_table():
     assert table[2][2].text == "Casterly Rock"
     assert table[3][3].text == "We Do Not Sow"
 
+    assert str(table) == ("House, Region, Seat, Words\n"
+                          "Targaryen, Crownlands, Dragonstone, Fire and Blood\n"
+                          "Stark, North, Winterfell, Winter is Coming\n"
+                          "Lannister, Westerlands, Casterly Rock, Hear Me Roar\n"
+                          "Greyjoy, Iron Islands, Pyke, We Do Not Sow")
+
 
 def test_ignore_invisible_rows():
     table_parser = TableParser(ignore_invisible_rows=False)
