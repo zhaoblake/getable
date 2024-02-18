@@ -27,7 +27,7 @@ jobs:
           python -m pip install .[test]
       - name: Test with pytest
         run: |
-          python -m pytest --cov
+           python -m pytest --cov=getable
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         env:
